@@ -375,6 +375,7 @@
 "Assets/CharacterController.cs"
 "Assets/CharacterController2D.cs"
 "Assets/PlayerController.cs"
+"Assets/Player_Movement.cs"
 -langversion:9.0
 
 /deterministic

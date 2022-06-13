@@ -263,8 +263,9 @@ GameObject:
   m_Component:
   - component: {fileID: 744219018}
   - component: {fileID: 744219017}
-  - component: {fileID: 744219015}
   - component: {fileID: 744219019}
+  - component: {fileID: 744219020}
+  - component: {fileID: 744219021}
   m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
@@ -272,26 +273,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &744219015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744219013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd6b3f66afc1b4469066d620637ba3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  movePoint: {fileID: 1255378162}
-  animator: {fileID: 744219019}
-  whatStopsMovement:
-    serializedVersion: 2
-    m_Bits: 128
-  prioInput: 0
-  movement: {x: 0, y: 0}
 --- !u!212 &744219017
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -383,6 +364,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &744219020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744219013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b30a3118348164d86a02a7419ae3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  animator: {fileID: 744219019}
+  movement: {x: 0, y: 0}
+  rigidBody: {fileID: 744219021}
+--- !u!50 &744219021
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744219013}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1255378161
 GameObject:
   m_ObjectHideFlags: 0
